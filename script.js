@@ -15,7 +15,44 @@
 
 7. `parseInt` both the `majorKey` and the new variable created in Step 6, ensure that both `majorKey` and the new variable are set to these new parsed values.
 
-******* SWITCH PROGRAMMERS *******
+
+*/
+
+var majorKey = 42;
+
+if (majorKey >= 53){
+  majorKey += 42 
+} else { 
+    majorKey -= 13}
+
+var newString = '11';
+majorKey += newString;
+
+var keyChars = [];
+
+for (var i = 0; i < majorKey.length; i++) {
+   
+    keyChars[i] = majorKey.charAt(i);
+    
+}
+
+keyChars.shift();
+keyChars.pop();
+
+var newVar = [];
+
+for (var i = keyChars.length-1; i >= 0; i--) {
+    newVar += keyChars[i];
+ // newVar.push(keyChars[i]);  
+}
+
+majorKey = parseInt(majorKey);
+newVar = parseInt(newVar);
+
+console.log(keyChars);
+console.log(majorKey);
+console.log(newVar);
+/******** SWITCH PROGRAMMERS *******
 
 8. Add `majorKey` and the new variable created in Step 6 together and store them in `majorKey`
 
@@ -33,5 +70,4 @@ is more than one character in the string. Return `val` and set `majorKey` to the
 
 14. Create an index.html file, link in this JavaScript file. Load in the browser and check the value from Step 13.
 
-15. Your answer should be a string value that equals 7. Is that what you got?
-*/
+15. Your answer should be a string value that equals 7. Is that what you got?*/
