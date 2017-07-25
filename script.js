@@ -52,6 +52,7 @@ newVar = parseInt(newVar);
 console.log(keyChars);
 console.log(majorKey);
 console.log(newVar);
+
 /******** SWITCH PROGRAMMERS *******
 
 8. Add `majorKey` and the new variable created in Step 6 together and store them in `majorKey`
@@ -71,3 +72,35 @@ is more than one character in the string. Return `val` and set `majorKey` to the
 14. Create an index.html file, link in this JavaScript file. Load in the browser and check the value from Step 13.
 
 15. Your answer should be a string value that equals 7. Is that what you got?*/
+
+majorKey += newVar;
+
+if(majorKey < 60){
+    majorKey = 14;
+} else if (majorKey===2930) {
+    majorKey = 27;
+} else {
+    majorKey = 2;
+}
+var counter = 10;
+
+while(counter > 0){
+    majorKey ++;
+    counter--;
+}
+
+console.log(majorKey);
+
+function stringCon(val){
+    val.toString();
+
+    if(val.length > 1) {
+    console.log('hello!');
+    };
+
+    return val;
+    majorKey = val;
+};
+
+console.log(stringCon('888'));
+console.log(majorKey);
